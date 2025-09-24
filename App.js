@@ -6,6 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function App() {
   const [view, setView] = useState('lista')
   const [lembretes, setLembretes] = useState([])
+  const [textoLembrete, setTextoLembrete] = useState('')
 
   return (
 

@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, ScrollView, Alert } from 'react-native';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
+  const[view, setView] = useState('lista')
+  
   return (
+
     <SafeAreaView style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      
     </SafeAreaView>
   );
 }

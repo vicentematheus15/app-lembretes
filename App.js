@@ -9,7 +9,6 @@ export default function App() {
   const [textoLembrete, setTextoLembrete] = useState('')
 
   return (
-
     <SafeAreaView style={styles.container}>
       
     </SafeAreaView>

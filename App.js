@@ -18,6 +18,9 @@ export default function App() {
       } else {
         Alert.alert("Aviso", "Nenhum lembrete salvo encontrado")
       }
+    } catch (e) {
+      console.error("Falha ao carregar lembretes", e)
+      Alert.alert("Erro", "Não foi possível carregar os lembretes")
     }
   }
   return (

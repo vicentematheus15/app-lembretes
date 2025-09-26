@@ -8,6 +8,9 @@ export default function App() {
   const [lembretes, setLembretes] = useState([])
   const [textoLembrete, setTextoLembrete] = useState('')
 
+  const handleLoadLembretes = async () => {
+    
+  }
   return (
     <SafeAreaView style={styles.container}>
       

@@ -12,7 +12,10 @@ export default function App() {
   const handleLoadLembretes = async () => {
     try {
       const lembretesSalvos = await AsyncStorage.getItem('@lembretes')
-      
+      if(lembretesSalvos !== null) {
+        setLembretes(JSON.parse(lembretesSalvos))
+        Alert.alert("Sucesso", "Lembretes carregados!")
+      } 
     }
   }
   return (

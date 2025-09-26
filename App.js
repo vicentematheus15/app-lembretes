@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, ScrollView, Alert } from 'react-native';
 import { useState, useEffect, use } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App() {
   const [view, setView] = useState('lista')
@@ -9,7 +10,10 @@ export default function App() {
   const [textoLembrete, setTextoLembrete] = useState('')
 
   const handleLoadLembretes = async () => {
-    
+    try {
+      const lembretesSalvos = await AsyncStorage.getItem('@lembretes')
+      
+    }
   }
   return (
     <SafeAreaView style={styles.container}>

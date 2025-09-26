@@ -15,7 +15,9 @@ export default function App() {
       if(lembretesSalvos !== null) {
         setLembretes(JSON.parse(lembretesSalvos))
         Alert.alert("Sucesso", "Lembretes carregados!")
-      } 
+      } else {
+        Alert.alert("Aviso", "Nenhum lembrete salvo encontrado")
+      }
     }
   }
   return (

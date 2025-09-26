@@ -9,6 +9,8 @@ export default function App() {
   const [lembretes, setLembretes] = useState([])
   const [textoLembrete, setTextoLembrete] = useState('')
 
+// Função para CARREGAR os lembretes do AsyncStorage.
+// Será chamada por um botão.
   const handleLoadLembretes = async () => {
     try {
       const lembretesSalvos = await AsyncStorage.getItem('@lembretes')

@@ -26,14 +26,16 @@ export default function App() {
     }
   }
 
+// Função para ADICIONAR um novo lembrete.
   const handleAddLembrete = async () => {
+// 1. Verifica se o campo de texto não está vazio.
     if(textoLembrete.trim()){
       Alert.alert("Erro", "O campo lembrete não pode estar vazio")
       return
     }
   }
 
-  
+
   return (
     <SafeAreaView style={styles.container}>
       

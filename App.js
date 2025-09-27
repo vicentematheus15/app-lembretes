@@ -34,6 +34,7 @@ export default function App() {
       return
     }
     
+// 2. Cria um novo objeto de lembrete com um ID único.
   const novoLembrete = {
     id: Date.now().toString(),
     texto: textoLembrete,

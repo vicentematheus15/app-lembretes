@@ -40,6 +40,7 @@ export default function App() {
     texto: textoLembrete,
   }
 
+// 3. Adiciona o novo lembrete à lista existente.
   constlistaAtualizada = [...lembretes, novoLembrete]
   setLembretes(listaAtualizada)
 }

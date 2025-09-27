@@ -25,6 +25,10 @@ export default function App() {
       Alert.alert("Erro", "Não foi possível carregar os lembretes")
     }
   }
+
+  const handleAddLembrete = async () => {
+    
+  }
   return (
     <SafeAreaView style={styles.container}>
       

@@ -27,8 +27,13 @@ export default function App() {
   }
 
   const handleAddLembrete = async () => {
-    
+    if(textoLembrete.trim()){
+      Alert.alert("Erro", "O campo lembrete não pode estar vazio")
+      return
+    }
   }
+
+  
   return (
     <SafeAreaView style={styles.container}>
       

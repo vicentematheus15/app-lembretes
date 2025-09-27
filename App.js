@@ -33,8 +33,12 @@ export default function App() {
       Alert.alert("Erro", "O campo lembrete não pode estar vazio")
       return
     }
+    
+  const novoLembrete = {
+    id: Date.now().toString(),
+    texto: textoLembrete,
   }
-
+}
 
   return (
     <SafeAreaView style={styles.container}>

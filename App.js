@@ -39,6 +39,9 @@ export default function App() {
     id: Date.now().toString(),
     texto: textoLembrete,
   }
+
+  constlistaAtualizada = [...lembretes, novoLembrete]
+  setLembretes(listaAtualizada)
 }
 
   return (

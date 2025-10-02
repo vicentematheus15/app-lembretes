@@ -45,7 +45,12 @@ export default function App() {
   setLembretes(listaAtualizada)
 }
 // 4. SALVA a lista atualizada no AsyncStorage.
- 
+  try {
+    await AsyncStorage.setItem("@lembretes", JSON.stringify(listaAtualizada));
+  } catch (e) {
+      console.error("Falha ao salvar o lembrete.", e);
+  }
+  };
 
  
   return (

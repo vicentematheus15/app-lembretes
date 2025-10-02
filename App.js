@@ -43,7 +43,7 @@ export default function App() {
 // 3. Adiciona o novo lembrete à lista existente.
   constlistaAtualizada = [...lembretes, novoLembrete]
   setLembretes(listaAtualizada)
-}
+
 // 4. SALVA a lista atualizada no AsyncStorage.
   try {
     await AsyncStorage.setItem("@lembretes", JSON.stringify(listaAtualizada));

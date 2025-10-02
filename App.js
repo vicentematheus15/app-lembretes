@@ -52,6 +52,7 @@ export default function App() {
   }
   };
 
+  // 5. Limpa o campo do formulário e volta para a tela de lista.
  
   return (
     <SafeAreaView style={styles.container}>

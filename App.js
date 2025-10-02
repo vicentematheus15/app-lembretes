@@ -50,7 +50,6 @@ export default function App() {
   } catch (e) {
       console.error("Falha ao salvar o lembrete.", e);
   }
-  };
 
   // 5. Limpa o campo do formulário e volta para a tela de lista.
     setTextoLembrete('');
@@ -62,7 +61,7 @@ export default function App() {
       
     </SafeAreaView>
   );
-}
+
 
 const styles = StyleSheet.create({
   container: {

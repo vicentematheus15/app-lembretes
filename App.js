@@ -28,23 +28,23 @@ export default function App() {
 
 // Função para ADICIONAR um novo lembrete.
   const handleAddLembrete = async () => {
-// 1. Verifica se o campo de texto não está vazio.
+  // 1. Verifica se o campo de texto não está vazio.
     if(textoLembrete.trim()){
       Alert.alert("Erro", "O campo lembrete não pode estar vazio")
       return
     }
     
-// 2. Cria um novo objeto de lembrete com um ID único.
+  // 2. Cria um novo objeto de lembrete com um ID único.
   const novoLembrete = {
     id: Date.now().toString(),
     texto: textoLembrete,
   }
 
-// 3. Adiciona o novo lembrete à lista existente.
+  // 3. Adiciona o novo lembrete à lista existente.
   constlistaAtualizada = [...lembretes, novoLembrete]
   setLembretes(listaAtualizada)
 
-// 4. SALVA a lista atualizada no AsyncStorage.
+  // 4. SALVA a lista atualizada no AsyncStorage.
   try {
     await AsyncStorage.setItem("@lembretes", JSON.stringify(listaAtualizada));
   } catch (e) {

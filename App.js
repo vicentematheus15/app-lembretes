@@ -5,10 +5,21 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App() {
+
+//-------------------------------------------------------------------------------
+//                  Seção de Estados (useState)
+//-------------------------------------------------------------------------------
+
+
   const [view, setView] = useState('lista')
   const [lembretes, setLembretes] = useState([])
   const [textoLembrete, setTextoLembrete] = useState('')
 
+/*
+-------------------------------------------------------------------------------
+Seção de Funções de Ação
+-------------------------------------------------------------------------------
+*/
 // Função para CARREGAR os lembretes do AsyncStorage.
 // Será chamada por um botão.
   const handleLoadLembretes = async () => {
@@ -73,7 +84,8 @@ export default function App() {
 /* 
 -------------------------------------------------------------------------------
  Seção da Interface Visual (JSX com Renderização Condicional)
--------------------------------------------------------------------------------                    */
+-------------------------------------------------------------------------------                    
+*/
   return (
     <SafeAreaView style={styles.container}>
       

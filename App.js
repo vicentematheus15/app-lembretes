@@ -58,9 +58,11 @@ export default function App() {
 
  // Função para DELETAR um lembrete.
   const handleDeleteLembrete = async (id) => {
-
+  // 1. Filtra a lista, mantendo apenas os lembretes com ID diferente do que foi passado.
     const listaAtualizada = lembretes.filter(lembrete => lembrete.id !== id);
     setLembretes(listaAtualizada);
+    
+  // 2. SALVA a nova lista (sem o item deletado) no AsyncStorage.
 
 
 

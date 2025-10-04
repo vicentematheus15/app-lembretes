@@ -56,6 +56,14 @@ export default function App() {
     setView('lista');
   };
 
+
+  const handleDeleteLembrete = async (id) => {
+    
+    const listaAtualizada = lembretes.filter(lembrete => lembrete.id !== id);
+    setLembretes(listaAtualizada);
+
+
+
   return (
     <SafeAreaView style={styles.container}>
       

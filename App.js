@@ -56,7 +56,7 @@ export default function App() {
     setView('lista');
   };
 
- // Função para DELETAR um lembrete.
+// Função para DELETAR um lembrete.
   const handleDeleteLembrete = async (id) => {
   // 1. Filtra a lista, mantendo apenas os lembretes com ID diferente do que foi passado.
     const listaAtualizada = lembretes.filter(lembrete => lembrete.id !== id);
@@ -70,8 +70,10 @@ export default function App() {
     }
   };
 
-
-
+/* 
+-------------------------------------------------------------------------------
+ Seção da Interface Visual (JSX com Renderização Condicional)
+-------------------------------------------------------------------------------                    */
   return (
     <SafeAreaView style={styles.container}>
       

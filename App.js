@@ -61,8 +61,14 @@ export default function App() {
   // 1. Filtra a lista, mantendo apenas os lembretes com ID diferente do que foi passado.
     const listaAtualizada = lembretes.filter(lembrete => lembrete.id !== id);
     setLembretes(listaAtualizada);
-    
+
   // 2. SALVA a nova lista (sem o item deletado) no AsyncStorage.
+    try {
+      await AsyncStorage.setItem('@lembretes', JSON.stringify(listaAtualizada));
+    } catch (e) {
+      console.error("Falha ao deletar o lembrete.", e);
+    }
+  };
 
 
 

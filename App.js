@@ -128,6 +128,18 @@ export default function App() {
   // SENÃO (se a "view" for 'formulario'), MOSTRE ISTO:
           <View style={styles.formContainer}>
             <Text style={styles.formHeader}>Adicionar Lembrete</Text>
+  {/* Input para o texto do lembrete */}
+            <TextInput
+              style={styles.input}
+              placeholder="O que você quer lembrar?"
+              value={textoLembrete}
+              onChangeText={setTextoLembrete}
+              multiline={true}
+            />
+
+            
+
+
 
 
 

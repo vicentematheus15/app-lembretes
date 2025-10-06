@@ -107,7 +107,14 @@ export default function App() {
           {lembretes.length === 0 ? (
               <Text style={styles.emptyText}>Nenhum lembrete cadastrado.</Text>
             ) : (
-              // Se não estiver vazia, usa o .map() para criar um componente para cada lembrete.
+    // Se não estiver vazia, usa o .map() para criar um componente para cada lembrete.
+              lembretes.map((item) => (
+                <View key={item.id} style={styles.lembreteItem}>
+                  {/* Container para o texto do lembrete */}
+                  <View style={styles.lembreteTextContainer}>
+                    <Text style={styles.lembreteTitle}>{item.texto}</Text>
+                  </View>
+
 
 
 

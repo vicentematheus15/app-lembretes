@@ -103,11 +103,11 @@ export default function App() {
                     <Text style={styles.buttonText}>Carregar Salvos</Text>
                 </TouchableOpacity>
             </View>
-
-
-
-
-
+  {/* Renderização condicional: se a lista estiver vazia, mostra uma mensagem. */}
+          {lembretes.length === 0 ? (
+              <Text style={styles.emptyText}>Nenhum lembrete cadastrado.</Text>
+            ) : (
+              // Se não estiver vazia, usa o .map() para criar um componente para cada lembrete.
 
 
 

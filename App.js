@@ -98,6 +98,15 @@ export default function App() {
                     <Text style={styles.buttonText}>Adicionar Novo Lembrete</Text>
                 </TouchableOpacity>
 
+              {/* Botão para carregar os lembretes salvos */}
+               <TouchableOpacity style={styles.loadButton} onPress={handleLoadLembretes}>
+                    <Text style={styles.buttonText}>Carregar Salvos</Text>
+                </TouchableOpacity>
+            </View>
+
+
+
+
 
 
 

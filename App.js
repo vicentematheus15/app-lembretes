@@ -87,7 +87,21 @@ export default function App() {
              
   return (
     <SafeAreaView style={styles.container}>
-      
+       <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <Text style={styles.header}>Meus Lembretes</Text>
+         {view === 'lista' ? (
+  // SE a variável de estado "view" for 'lista', MOSTRE ISTO:
+          <View>
+            <View style={styles.botoesMenu}>
+              {/* Botão para ir para a tela de formulário */}
+              <TouchableOpacity style={styles.addButton} onPress={() => setView('formulario')}>
+                    <Text style={styles.buttonText}>Adicionar Novo Lembrete</Text>
+                </TouchableOpacity>
+
+
+
+
+
     </SafeAreaView>
   );
 

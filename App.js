@@ -9,7 +9,7 @@ import {
   Alert,
 } from "react-native";
 import { useState, useEffect, use } from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
@@ -171,12 +171,15 @@ export default function App() {
     </SafeAreaView>
   );
 }
+/*
+-------------------------------------------------------------------------------
+                              Seção de Estilos
+-------------------------------------------------------------------------------
+*/
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "#f5f5f5"
   },
 });

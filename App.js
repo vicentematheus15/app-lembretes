@@ -191,6 +191,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginVertical: 20,
     color: '#34495e'
+  },
+  //Menu da lista
+  botoesMenu: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20
   }
 
 });

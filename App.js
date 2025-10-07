@@ -1,5 +1,5 @@
-import { StatusBar } from "expo-status-bar";
 import {
+  SafeAreaView,
   StyleSheet,
   Text,
   View,
@@ -8,8 +8,7 @@ import {
   ScrollView,
   Alert,
 } from "react-native";
-import { useState, useEffect, use } from "react";
-import { SafeAreaView } from "react-native";
+import { useState, useEffect} from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {

@@ -142,15 +142,17 @@ export default function App() {
               <TouchableOpacity style={[styles.formButton, styles.cancelButton]} onPress={() => setView('lista')}>
                 <Text style={styles.buttonText}>Cancelar</Text>
               </TouchableOpacity>
-
-            
-
-
-
-
-
-
-
+{/* Botão para salvar o novo lembrete */}
+              <TouchableOpacity style={[styles.formButton, styles.saveButton]} onPress={handleAddLembrete}>
+                <Text style={styles.buttonText}>Salvar</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        )}
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
 
 
 

@@ -182,4 +182,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f5f5f5"
   },
+  scrollContainer: {
+    padding: 16
+  },
+  header: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginVertical: 20,
+    color: '#34495e'
+  }
+
 });

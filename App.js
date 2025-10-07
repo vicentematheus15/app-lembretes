@@ -137,6 +137,12 @@ export default function App() {
               multiline={true}
             />
 
+            <View style={styles.formActions}>
+  {/* Botão para cancelar e voltar para a lista */}
+              <TouchableOpacity style={[styles.formButton, styles.cancelButton]} onPress={() => setView('lista')}>
+                <Text style={styles.buttonText}>Cancelar</Text>
+              </TouchableOpacity>
+
             
 
 

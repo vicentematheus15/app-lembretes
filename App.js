@@ -29,18 +29,19 @@ export default function App() {
   // Será chamada por um botão.
   const handleLoadLembretes = async () => {
     try {
-      const lembretesSalvos = await AsyncStorage.getItem("@lembretes");
+      const lembretesSalvos = await AsyncStorage.getItem('@lembretes');
       if (lembretesSalvos !== null) {
         setLembretes(JSON.parse(lembretesSalvos));
         Alert.alert("Sucesso", "Lembretes carregados!");
       } else {
-        Alert.alert("Aviso", "Nenhum lembrete salvo encontrado");
+        Alert.alert("Aviso", "Nenhum lembrete salvo encontrado.");
       }
     } catch (e) {
-      console.error("Falha ao carregar lembretes", e);
-      Alert.alert("Erro", "Não foi possível carregar os lembretes");
+      console.error("Falha ao carregar lembretes.", e);
+      Alert.alert("Erro", "Não foi possível carregar os lembretes.");
     }
   };
+
 
   // Função para ADICIONAR um novo lembrete.
   const handleAddLembrete = async () => {

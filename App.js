@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   TextInput,
   ScrollView,
-  Alert,
+  Alert
 } from "react-native";
 import { useState, useEffect} from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";

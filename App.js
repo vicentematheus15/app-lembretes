@@ -198,12 +198,20 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 20
   },
-  addButton {
+  addButton: {
     backgroundColor: '#007bff',
     padding: 12,
     borderRadius: 5,
     flex: 1, //ocupa espaço disponível
     marginRight: 5, //espaço entre os botões
+    alignItens: 'center'
+  },
+  loadButton: {
+    backgroundColor: '#5bc0de',
+    padding: 12,
+    borderRadius: 5,
+    flex: 1,
+    marginLeft: 5,
     alignItens: 'center'
   }
 

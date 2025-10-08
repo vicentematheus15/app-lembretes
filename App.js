@@ -197,6 +197,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 20
+  },
+  addButton {
+    backgroundColor: '#007bff',
+    padding: 12,
+    borderRadius: 5,
+    flex: 1, //ocupa espaço disponível
+    marginRight: 5, //espaço entre os botões
+    alignItens: 'center'
   }
 
 });

@@ -213,6 +213,12 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 5,
     alignItens: 'center'
+  },
+  //Formulário
+  formContainer: {
+    backgroundColor: '#fff',
+    padding: 20,
+    borderRadius: 10
   }
 
 });

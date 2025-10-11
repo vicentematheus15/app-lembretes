@@ -235,7 +235,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     height: 100,
     textAlignVertical: 'top',
-  }
+  },
+  formActions: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+
 
 
 });

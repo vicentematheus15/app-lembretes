@@ -225,6 +225,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 15,
     textAlign: 'center'
+  },
+  input: {
+    borderColor: '#bdc3c7',
+    borderWidth: 1,
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 15,
+    fontSize: 16,
+    height: 100,
+    textAlignVertical: 'top',
   }
+
 
 });

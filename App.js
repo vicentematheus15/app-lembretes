@@ -246,6 +246,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: 5,
   },
+  cancelButton: {
+    backgroundColor: '#95a5a6',
+  },
 
 
 

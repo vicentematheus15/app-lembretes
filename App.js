@@ -240,6 +240,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
+  formButton: {
+    flex: 1,
+    padding: 12,
+    borderRadius: 5,
+    marginHorizontal: 5,
+  },
 
 
 

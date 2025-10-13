@@ -252,6 +252,7 @@ const styles = StyleSheet.create({
   saveButton: {
     backgroundColor: '#27ae60',
   },
+  // Item da Lista
   lembreteItem: {
     backgroundColor: '#fff',
     padding: 20,

@@ -266,7 +266,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 15,
   },
-  
+  lembreteTitle: {
+    fontSize: 18,
+  },
+
 
 
 });

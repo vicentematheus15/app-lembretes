@@ -269,7 +269,4 @@ const styles = StyleSheet.create({
   lembreteTitle: {
     fontSize: 18,
   },
-
-
-
 });

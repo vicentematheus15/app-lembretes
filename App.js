@@ -262,8 +262,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-
-
+  lembreteTextContainer: {
+    flex: 1,
+    marginRight: 15,
+  },
+  
 
 
 });

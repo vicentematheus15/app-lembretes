@@ -251,7 +251,17 @@ const styles = StyleSheet.create({
   },
   saveButton: {
     backgroundColor: '#27ae60',
-  }
+  },
+  lembreteItem: {
+    backgroundColor: '#fff',
+    padding: 20,
+    marginVertical: 8,
+    borderRadius: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
 
 
 

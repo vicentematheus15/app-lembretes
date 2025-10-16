@@ -269,4 +269,11 @@ const styles = StyleSheet.create({
   lembreteTitle: {
     fontSize: 18,
   },
+  deleteButton: {
+    backgroundColor: '#e74c3c',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 5,
+  },
+
 });

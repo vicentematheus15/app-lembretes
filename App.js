@@ -280,5 +280,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  emptyText: {
+    textAlign: 'center',
+    marginTop: 30,
+    fontSize: 18,
+    color: '#95a5a6',
+  },
 
 });

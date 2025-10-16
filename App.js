@@ -285,6 +285,5 @@ const styles = StyleSheet.create({
     marginTop: 30,
     fontSize: 18,
     color: '#95a5a6',
-  },
-
+  }
 });
